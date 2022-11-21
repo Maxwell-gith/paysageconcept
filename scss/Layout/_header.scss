@@ -28,7 +28,7 @@
     z-index: 3;
     top: 105px;
     right: 0;
-    background-color: $primaryColor;
+    background-color: white;
     transition: all 0.5s ease-in-out;
     overflow: hidden;
 }
@@ -36,7 +36,8 @@
 .navbar__link > a {
     display: block;
     padding: 20px;
-    color: $secondaryColor;
+    font-size: 20px;
+    color: $primaryColor;
     font-weight: 700;
 }
 
@@ -55,7 +56,7 @@
 
 
     // Tout le style du bouton burger
-.navbar__burger{
+.navbar__burger {
     display: block;
     position: relative;
     padding: 0;
@@ -116,26 +117,29 @@
     transition: all 1.2s ease-out;
 }
 
-.show-navbar .delay4 {
-    transition: all 1.3s ease-out;
-}
+// -----------FIGURE AND TEXT-----------------
 
 .header {
-    background: url(../../img/header_photo.jpg);
+    background: linear-gradient(
+        rgba(0,0,0,0.2), 
+        rgba(0,0,0,0.1)), 
+        url(../../img/header_photo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: darken;
     height: 100%;
-    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.header__logo {
+    padding: 20px;
+}
+
 .header__text{
     text-align: center;
     font-size: 24px;
-    margin: 25px 0 25px 0;
+    padding: 20px;
     color: whitesmoke;
 }

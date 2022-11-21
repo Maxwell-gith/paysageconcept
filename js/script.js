@@ -18,3 +18,6 @@ function closeBurgerMenu () {
         navBar.classList.remove('show-navbar');
     })
 }
+
+burgerMenu();
+closeBurgerMenu();

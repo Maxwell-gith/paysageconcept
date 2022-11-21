@@ -3,11 +3,11 @@
         "../Utils/variables";
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: $font-title;
+    font-family: 'Oswald', sans-serif;
 }
 
-p {
-    font-family: $font-base;
+p, a {
+    font-family: 'Roboto', sans-serif;
 }
 
 $p-font-sizes: (
