@@ -1,0 +1,33 @@
+@import "../Utils/animations", 
+        "../Utils/mixins", 
+        "../Utils/variables";
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-title;
+}
+
+p {
+    font-family: $font-base;
+}
+
+$p-font-sizes: (
+    null  : 16px,
+    480px : 16px,
+    640px : 17px,
+    1024px: 19px
+  );
+  
+
+@mixin font-size($fs-map) {
+    @each $fs-breakpoint, $fs-font-size in $fs-map {
+        @if $fs-breakpoint == null {
+            font-size: $fs-font-size;
+        }
+        @else {
+            @media screen and (min-width: $fs-breakpoint) {
+                font-size: $fs-font-size;
+            }
+        }
+    }
+}
+  
