@@ -1,0 +1,44 @@
+@import "../Utils/animations", 
+        "../Utils/mixins", 
+        "../Utils/variables";
+
+@import "../Base/typography", 
+        "../Base/reset";
+
+#contacts {
+    padding: 25px;
+}
+
+.contacts__text {
+    text-align: justify;
+}
+
+.contacts__text--button {
+    font-weight: bold;
+    cursor: pointer;
+    color: $primaryColor;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width: 850px) {
+   .contacts__title {
+    width: fit-content;
+    margin: auto;
+   } 
+
+   .contacts__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
+
+   .contacts__text {
+    width: 60%;
+   }
+
+   .contacts__logo {
+    width: 35%;
+   }
+}

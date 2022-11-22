@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>paysageconcept41</title>
     <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,26 +21,29 @@
   <body>
     <!--=========================== HEADER ===========================-->
     <header>
+      <!-- Navbar -->
       <nav class="navbar" role="navigation">
         <div class="navbar__logo">
-          <img src="img/PhotoshopLogoFinal-removebg-preview.png">
+          <img src="img/logo.png">
         </div>
         <ul class="navbar__links">
-          <li class="navbar__link delay1"><a class="navbar__linka" href="#services"><p>Nos services</p></a></li>
-          <li class="navbar__link delay2"><a class="navbar__linka" href="#pictures">Nos réalisations</a></li>
-          <li class="navbar__link delay3"><a class="navbar__linka" href="#contact">Nous contacter</a></li>
+          <li class="navbar__link delay1"><a class="navbar__linka" href="#presentation">Présentation</a></li>
+          <li class="navbar__link delay2"><a class="navbar__linka" href="#services">Nos services</a></li>
+          <li class="navbar__link delay3"><a class="navbar__linka" href="#pictures">Nos réalisations</a></li>
+          <li class="navbar__link delay4"><a class="navbar__linka" href="#contact">Nous contacter</a></li>
         </ul>
         <button class="navbar__burger">
           <span class="navbar__burger-line"></span>
         </button>
       </nav>
+      <!-- Figure and text -->
       <figure class="header">
         <div class="header__logo">
-          <img src="img/logo.png">
+          <img src="img/logo_seul-transparent.png">
         </div>
-        <!-- <figcaption class="header__text">
-          <p>Aménagement extérieur, création et entretiens de vos espaces verts</p>
-        </figcaption> -->
+        <figcaption class="header__text">
+          <h1>Aménagement extérieur, création et entretiens de vos espaces verts</h1>
+        </figcaption>
       </figure>
     </header>
 
@@ -46,49 +51,117 @@
     <main>
 
       <!--=========================== PRESENTATION ===========================-->
-      <section>
-        <p>Actuellement basé dans le Vendômois, 
+      <section id="presentation">
+        <h2 class="presentation__title">Qui sommes-nous?</h2>
+        <p class="presentation__text">Actuellement basé dans le Vendômois, 
           nous opèrons donc sur Vendôme, Naveil, Saint Ouen, 
-          Villiers-surLoire et alentours.
+          Villiers-sur-Loir et alentours.
           Nous proposons nos services pour tout travail d'entretiens 
           (tonde de pelouse, taille de haies, etc...) et également pour 
-          la création et l'aménagement de votre extérieur (parterre, allées, 
-          aménagements autour de piscine etc...). N'hésitez pas à nous contacter.
+          la création et l'aménagement de votre extérieur (parterres, allées, 
+          aménagements autour de piscines etc...). N'hésitez pas à nous 
+          <a href="#contacts">contacter</a>.
         </p>
 
       </section>
 
       <!--=========================== SERVICES ===========================-->
-      <section>
+      <section id="services">
+        <h2 class="services__title">Nos services</h2>
         <!-- Créations -->
-        <div>
-
+        <div class="services__container">
+          <div class="creations">
+            <h3 class="creations__title">Créations</h3>
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./img/20221027_140120.jpg"> </div>
+                <div class="swiper-slide"><img src="./img/20221027_140120.jpg"></div>
+                <div class="swiper-slide"><img src="./img/20221027_140120.jpg"></div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+  
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <p class="creations__text">
+              Aménagement de vos espaces verts selon vos envie. 
+              Vous avez une idée ou alors cherchez des conseils pour améliorer 
+              votre extérieur nous pouvons vous aidez.
+            </p>
+          </div>
+          <!-- Entretiens -->
+          <div class="entretiens">
+            <h3 class="entretiens__title">Entretiens</h3>
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./img/20221027_140120.jpg"> </div>
+                <div class="swiper-slide"><img src="./img/20221027_140120.jpg"></div>
+                <div class="swiper-slide"><img src="./img/20221027_140120.jpg"></div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+  
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <p class="entretiens__text">
+              Entretiens de vos espaces verts. Taille de haie, tonte de pelouse, etc
+            </p>
+          </div>
         </div>
-        <!-- Entretiens -->
-        <div></div>
       </section>
 
-      <!--=========================== INSTAGRAM ===========================-->
-      <section>
-        <header></header>
-
-        <div></div>
+      <!--=========================== PICTURES ===========================-->
+      <section id="pictures">
+        <h2 class="pictures__title">Nos réalisations</h2>
+        <div class="elfsight-app-e6ae2da9-8ee5-4a51-bbcb-a9912515f33b instawidget"></div>
+        <div class="cachelogo"></div>
       </section>
-
+      
       <!--=========================== CONTACT ===========================-->
-      <section>
-        <header></header>
-
-        <div></div>
+      <section id="contacts">
+        <h2 class="contacts__title">Nous contacter</h2>
+        <div class="contacts__container">
+          <p class="contacts__text">
+            Une idée, un besoin n'hésitez pas à nous contacter <br>
+            Par mail: <br>
+            <a class="contacts__text--button"
+              href="mailto:paysageconcept41@gmail.com">
+              paysageconcept41@gmail.com
+            </a><br>
+            ou par téléphone: <br>
+            <a class="contacts__text--button"
+              href="tel:+33604193819">
+              06 04 19 38 19
+            </a>
+          </p>
+          <div class="contacts__logo">
+            <img src="./img/logo.png">
+          </div>
+        </div>
       </section>
-
+      
     </main>
-
-
+    
+    
     <!--=========================== FOOTER ===========================-->
-    <footer></footer>
-
+    <footer id="footer">      
+      <p class="footer__text">👨‍💻 Site crée par <a class="footer__link" href="https://github.com/Maxwell-gith" target="_blank">Maxime Héry</a></p>
+      <p class="footer__text">📚 <a href="./mentions_legales.html" class="footer__link">Mentions légales</a></p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js\script.js"></script>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 
   </body>
 </html>

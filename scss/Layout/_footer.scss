@@ -1,0 +1,17 @@
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: $primaryColor;
+}
+
+.footer__text {
+    color: whitesmoke;
+}
+
+.footer__text > a {
+    color: whitesmoke;
+    text-decoration: underline;
+    cursor: pointer;
+}

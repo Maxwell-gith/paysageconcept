@@ -1,0 +1,65 @@
+#services {
+    display: flex;
+    flex-direction: column;
+}
+
+.services__title {
+    margin-left: 25px;
+}
+
+.creations {
+    padding: 25px;
+    background-color: $primaryColor;
+}
+
+.creations__title {
+    color: whitesmoke;
+}
+
+.creations__text {
+    color: whitesmoke;
+    text-align: justify;
+}
+
+.entretiens {
+    padding: 25px;
+    background-color: $primaryColor;
+}
+
+.entretiens__title {
+    color: whitesmoke;
+}
+
+.entretiens__text {
+    color: whitesmoke;
+    text-align: justify;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+  }
+
+.swiper-button-prev, .swiper-button-next {
+    color: whitesmoke !important;
+}
+
+@media screen and (min-width: 850px) {
+    .services__title {
+        margin: auto;
+    }
+
+    .services__container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .creations {
+        width: 40%;
+    }
+
+    .entretiens {
+        width: 40%;
+    }
+}
+

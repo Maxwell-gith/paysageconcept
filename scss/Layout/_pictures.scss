@@ -1,0 +1,22 @@
+
+// Utile pour cacher le "logo" elfsight
+.cachelogo {
+    background-color: #fff;
+    height: 50px;
+    width: 100%;
+    margin-top: -50px;
+    position: absolute;
+    z-index: 100000000000000;
+}
+
+.pictures__title {
+    margin-left: 25px;
+    width: fit-content;
+}
+
+
+@media screen and (min-width: 850px) {
+    .pictures__title {
+        margin: auto;
+    }
+}

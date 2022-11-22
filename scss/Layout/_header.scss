@@ -1,20 +1,10 @@
-@import "../Utils/animations", 
-        "../Utils/mixins", 
-        "../Utils/variables";
-
-@import "../Base/typography", 
-        "../Base/reset";
-
-
 // -----------NAVBAR-----------------
 .navbar{
-    // background-color: $primaryColor;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     height: 95px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .navbar__logo{
@@ -117,12 +107,45 @@
     transition: all 1.2s ease-out;
 }
 
-// -----------FIGURE AND TEXT-----------------
+.show-navbar .delay4 {
+    transition: all 1.3s ease-out;
+}
 
+//-------------------NAVBAR MEDIA QUERIES-------------------
+@media screen and (min-width: 850px) {
+
+    .navbar__logo {
+        width: 15%;
+    }
+
+    .navbar__burger {
+        display: none;
+    }
+
+    .navbar__links {
+        width: 80%;
+        height: fit-content;
+        transition: none;
+        top: 0;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar__link {
+        transform: translateX(0); 
+    }
+
+    .navbar__link:hover {
+        letter-spacing: 0.5rem;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+// -----------FIGURE AND TEXT-----------------
 .header {
-    background: linear-gradient(
-        rgba(0,0,0,0.2), 
-        rgba(0,0,0,0.1)), 
+    background:  
         url(../../img/header_photo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -131,15 +154,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .header__logo {
-    padding: 20px;
+    width: 60%;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.3);
 }
 
 .header__text{
     text-align: center;
     font-size: 24px;
-    padding: 20px;
     color: whitesmoke;
+    background-color: rgba(0,0,0,0.3);
+    margin-top: 15px;
+    padding: 10px;
+}
+
+@media screen and (min-width: 850px) {
+    .header__logo {
+        width: 35%;
+    }
 }

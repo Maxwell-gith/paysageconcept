@@ -1,0 +1,26 @@
+#presentation {
+    padding: 25px;
+}
+
+.presentation__text {
+    text-align: justify;
+}
+
+.presentation__text > a {
+    font-weight: bold;
+    color: $primaryColor;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 850px) {
+    #presentation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .presentation__text {
+        width: 50%;
+    }
+}

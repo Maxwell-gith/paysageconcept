@@ -2,21 +2,36 @@
         "../Utils/mixins", 
         "../Utils/variables";
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Oswald', sans-serif;
-}
+// Responsive font
 
-p, a {
-    font-family: 'Roboto', sans-serif;
-}
+$h1-font-sizes: (
+    null  : 28px,
+    480px : 31px,
+    640px : 33px,
+    1024px: 36px
+);
+
+$h2-font-sizes: (
+    null  : 24px,
+    480px : 27px,
+    640px : 29px,
+    1024px: 32px
+);
+
+$h3-font-sizes: (
+    null  : 21px,
+    480px : 24px,
+    640px : 26px,
+    1024px: 29px
+);
 
 $p-font-sizes: (
     null  : 16px,
     480px : 16px,
     640px : 17px,
     1024px: 19px
-  );
-  
+    );
+    
 
 @mixin font-size($fs-map) {
     @each $fs-breakpoint, $fs-font-size in $fs-map {
@@ -30,4 +45,27 @@ $p-font-sizes: (
         }
     }
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    @include font-size($h1-font-sizes);
+}
+
+h2 {
+    @include font-size($h2-font-sizes); 
+}
+
+h3 {
+    @include font-size($h3-font-sizes);
+}
+
+p, a {
+    font-family: 'Roboto', sans-serif;
+    @include font-size($p-font-sizes);
+}
+
+
   
