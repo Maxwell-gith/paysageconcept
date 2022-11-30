@@ -4,35 +4,42 @@
 }
 
 .services__title {
-    margin-left: 25px;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 .creations {
     padding: 25px;
     background-color: $primaryColor;
+    margin-bottom: 25px;
 }
 
 .creations__title {
     color: whitesmoke;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .creations__text {
     color: whitesmoke;
-    text-align: justify;
+    text-align: center;
 }
 
 .entretiens {
     padding: 25px;
     background-color: $primaryColor;
+    margin-bottom: 25px;
 }
 
 .entretiens__title {
     color: whitesmoke;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .entretiens__text {
     color: whitesmoke;
-    text-align: justify;
+    text-align: center;
 }
 
 .swiper {
@@ -45,10 +52,6 @@
 }
 
 @media screen and (min-width: 850px) {
-    .services__title {
-        margin: auto;
-    }
-
     .services__container {
         display: flex;
         justify-content: space-around;
