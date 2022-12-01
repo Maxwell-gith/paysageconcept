@@ -11,10 +11,8 @@
     text-align: center;
 }
 
-.presentation__text > a {
-    font-weight: bold;
-    color: $primaryColor;
-    cursor: pointer;
+.presentation__text > q {
+    font-style: italic;
 }
 
 @media screen and (min-width: 850px) {

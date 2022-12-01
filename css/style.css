@@ -59,22 +59,22 @@ h3 {
   }
 }
 
-p, a {
+p, a, figcaption, q {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 @media screen and (min-width: 480px) {
-  p, a {
+  p, a, figcaption, q {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 640px) {
-  p, a {
+  p, a, figcaption, q {
     font-size: 17px;
   }
 }
 @media screen and (min-width: 1024px) {
-  p, a {
+  p, a, figcaption, q {
     font-size: 19px;
   }
 }
@@ -358,10 +358,8 @@ section {
   text-align: center;
 }
 
-.presentation__text > a {
-  font-weight: bold;
-  color: rgb(46, 101, 55);
-  cursor: pointer;
+.presentation__text > q {
+  font-style: italic;
 }
 
 @media screen and (min-width: 850px) {
@@ -537,22 +535,22 @@ h3 {
   }
 }
 
-p, a {
+p, a, figcaption, q {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 @media screen and (min-width: 480px) {
-  p, a {
+  p, a, figcaption, q {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 640px) {
-  p, a {
+  p, a, figcaption, q {
     font-size: 17px;
   }
 }
 @media screen and (min-width: 1024px) {
-  p, a {
+  p, a, figcaption, q {
     font-size: 19px;
   }
 }

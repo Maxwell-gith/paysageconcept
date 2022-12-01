@@ -62,7 +62,7 @@ h3 {
     @include font-size($h3-font-sizes);
 }
 
-p, a {
+p, a, figcaption, q {
     font-family: 'Roboto', sans-serif;
     @include font-size($p-font-sizes);
 }
