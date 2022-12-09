@@ -131,8 +131,8 @@ a {
 }
 
 section {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 1824px) {
@@ -299,7 +299,7 @@ section {
             transform: translateX(0);
   }
   .navbar__link:hover {
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.3rem;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
@@ -362,6 +362,10 @@ section {
   font-style: italic;
 }
 
+.presentation__text > span {
+  font-weight: bold;
+}
+
 @media screen and (min-width: 850px) {
   #presentation {
     display: -webkit-box;
@@ -390,6 +394,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 5px;
 }
 
 .services__title {
@@ -401,39 +406,68 @@ section {
   padding: 25px;
   background-color: rgb(46, 101, 55);
   margin-bottom: 25px;
+  border-radius: 10px;
 }
 
 .creations__title {
   color: whitesmoke;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .creations__text {
   color: whitesmoke;
   text-align: center;
+  margin-top: 25px;
 }
 
 .entretiens {
   padding: 25px;
   background-color: rgb(46, 101, 55);
   margin-bottom: 25px;
+  border-radius: 10px;
+  position: relative;
 }
 
 .entretiens__title {
   color: whitesmoke;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.entretiens__badge {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 60px;
+  max-width: 150px;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  background-color: #e63946;
+  color: whitesmoke;
+  position: absolute;
+  right: 10px;
+  top: 15px;
 }
 
 .entretiens__text {
   color: whitesmoke;
   text-align: center;
+  margin-top: 25px;
 }
 
 .swiper {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 .swiper-button-prev, .swiper-button-next {
@@ -474,151 +508,9 @@ section {
     margin: auto;
   }
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Oswald", sans-serif;
-}
-
-h1 {
-  font-size: 28px;
-}
-@media screen and (min-width: 480px) {
-  h1 {
-    font-size: 31px;
-  }
-}
-@media screen and (min-width: 640px) {
-  h1 {
-    font-size: 33px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  h1 {
-    font-size: 36px;
-  }
-}
-
-h2 {
-  font-size: 24px;
-}
-@media screen and (min-width: 480px) {
-  h2 {
-    font-size: 27px;
-  }
-}
-@media screen and (min-width: 640px) {
-  h2 {
-    font-size: 29px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  h2 {
-    font-size: 32px;
-  }
-}
-
-h3 {
-  font-size: 21px;
-}
-@media screen and (min-width: 480px) {
-  h3 {
-    font-size: 24px;
-  }
-}
-@media screen and (min-width: 640px) {
-  h3 {
-    font-size: 26px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  h3 {
-    font-size: 29px;
-  }
-}
-
-p, a, figcaption, q {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-}
-@media screen and (min-width: 480px) {
-  p, a, figcaption, q {
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 640px) {
-  p, a, figcaption, q {
-    font-size: 17px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  p, a, figcaption, q {
-    font-size: 19px;
-  }
-}
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1.5;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}
-
-section {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-@media screen and (min-width: 1824px) {
-  body {
-    width: 75%;
-    margin: auto;
-  }
-}
 #contacts {
   padding: 25px;
+  margin-bottom: 100px;
 }
 
 .contacts__title {
@@ -643,6 +535,22 @@ section {
           flex-direction: column;
 }
 
+.contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__link > a > i {
+  margin-right: 10px;
+}
+
 .contacts__text--button {
   font-weight: bold;
   cursor: pointer;
@@ -650,6 +558,24 @@ section {
   font-size: larger;
   text-decoration: underline;
   display: block;
+}
+
+.contacts__social {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25px;
+}
+
+.contacts__social > a > i {
+  color: rgb(46, 101, 55);
+  font-size: 48px;
 }
 
 .contacts__logo {
@@ -671,8 +597,20 @@ section {
   .contacts__text {
     width: 49%;
   }
+  .contacts__text--button:hover {
+    letter-spacing: 0.3rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
   .contacts__logo {
     width: 49%;
+  }
+  .contacts__social > a:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 0.8;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 }
 #footer {

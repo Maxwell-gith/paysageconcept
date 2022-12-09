@@ -48,7 +48,7 @@
           <li class="navbar__link delay1"><a class="navbar__linka" href="#presentation">Présentation</a></li>
           <li class="navbar__link delay2"><a class="navbar__linka" href="#services">Nos services</a></li>
           <li class="navbar__link delay3"><a class="navbar__linka" href="#pictures">Nos réalisations</a></li>
-          <li class="navbar__link delay4"><a class="navbar__linka" href="#contact">Nous contacter</a></li>
+          <li class="navbar__link delay4"><a class="navbar__linka" href="#contacts">Nous contacter</a></li>
         </ul>
         <button class="navbar__burger">
           <span class="navbar__burger-line"></span>
@@ -83,7 +83,7 @@
             Fort de 10 ans d’expérience. Passionné et investi dans mon travail, je mettrai à profit mes
             connaissances et mon savoir-faire pour mener à bien vos envies, vos projets.
           </q> <br>
-          Geoffrey Huguet
+          <span>Geoffrey Huguet</span>
         </p>
         
 
@@ -98,7 +98,7 @@
             <h3 class="creations__title">Créations</h3>
             <!-- Slider main container -->
             <div class="swiper">
-              <!-- Additional required wrapper -->
+              <!-- wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide"><img src="./img/creation_1.jpg"> </div>
@@ -108,10 +108,10 @@
                 <div class="swiper-slide"><img src="./img/creation_5.jpg"></div>
                 <div class="swiper-slide"><img src="./img/creation_6.jpg"></div>
               </div>
-              <!-- If we need pagination -->
+              <!-- Slider pagination -->
               <div class="swiper-pagination"></div>
   
-              <!-- If we need navigation buttons -->
+              <!-- Slider navigation buttons -->
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
             </div>
@@ -124,22 +124,24 @@
               Votre jardin deviendra votre nouvelle pièce de vie extérieure.
             </p>
           </div>
+          
           <!-- Entretiens -->
           <div class="entretiens">
+            <span class="entretiens__badge">Crédit d'impôt</span>
             <h3 class="entretiens__title">Entretiens</h3>
             <!-- Slider main container -->
             <div class="swiper">
-              <!-- Additional required wrapper -->
+              <!-- wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide"><img src="./img/entretien_1.jpg"> </div>
                 <div class="swiper-slide"><img src="./img/entretien_2.jpg"></div>
                 <div class="swiper-slide"><img src="./img/entretien_3.jpg"></div>
               </div>
-              <!-- If we need pagination -->
+              <!-- Slider pagination -->
               <div class="swiper-pagination"></div>
   
-              <!-- If we need navigation buttons -->
+              <!-- Slider navigation buttons -->
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
             </div>
@@ -167,21 +169,36 @@
           <p class="contacts__text">
             Une idée, un besoin n'hésitez pas à nous contacter <br>
             Par mail: <br>
-            <a class="contacts__text--button"
-              href="mailto:paysageconcept41@gmail.com">
-              <i class="fa-solid fa-envelope"></i>
-              paysageconcept41@gmail.com
-            </a><br>
+            <span class="contacts__link">
+              <a class="contacts__text--button"
+                href="mailto:paysageconcept41@gmail.com" title="Envoyer un mail à paysageconcept41@gmail.com">
+                <i class="fa-solid fa-envelope"></i>paysageconcept41@gmail.com
+              </a>
+            </span><br>
+
             par téléphone: <br>
-            <i class="fa-solid fa-phone"></i>
-            <a class="contacts__text--button"
-              href="tel:+33604193819">
-              06 04 19 38 19
-            </a>
+            <span class="contacts__link">
+              <a class="contacts__text--button"
+                href="tel:+33604193819" title="Appeler le 06 04 19 38 19">
+                <i class="fa-solid fa-phone"></i>06 04 19 38 19
+              </a>
+            </span><br>
+            Suivez-nous sur les réseaux! <br>
+            <span class="contacts__social">
+              <a href="https://www.facebook.com/paysageconcept41" title="Facebook">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/paysageconcept41/" title="Instagram">
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+            </span>
+
           </p>
+
           <div class="contacts__logo">
             <img src="./img/logo.png">
           </div>
+
         </div>
       </section>
       
@@ -190,8 +207,8 @@
     
     <!--=========================== FOOTER ===========================-->
     <footer id="footer">      
-      <p class="footer__text">👨‍💻 Site crée par <a class="footer__link" href="https://github.com/Maxwell-gith" target="_blank">Maxime Héry</a></p>
-      <p class="footer__text">📚 <a href="./mentions_legales.html" class="footer__link">Mentions légales</a></p>
+      <p class="footer__text">👨‍💻 Site crée par <a class="footer__link" href="https://github.com/Maxwell-gith" target="_blank" title="Maxime Héry">Maxime Héry</a></p>
+      <p class="footer__text">📚 <a href="./mentions_legales.html" class="footer__link" title="Mentions légales">Mentions légales</a></p>
     </footer>
 
     

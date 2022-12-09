@@ -1,12 +1,6 @@
-@import "../Utils/animations", 
-        "../Utils/mixins", 
-        "../Utils/variables";
-
-@import "../Base/typography", 
-        "../Base/reset";
-
 #contacts {
     padding: 25px;
+    margin-bottom: 100px;
 }
 
 .contacts__title {
@@ -22,6 +16,16 @@
     flex-direction: column;
 }
 
+.contacts__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts__link > a > i {
+    margin-right: 10px;
+}
+
 .contacts__text--button {
     font-weight: bold;
     cursor: pointer;
@@ -29,7 +33,19 @@
     font-size: larger;
     text-decoration: underline;
     display: block;
-   
+}
+
+.contacts__social {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.contacts__social > a > i {
+    color: $primaryColor;
+    font-size: 48px;
 }
 
 .contacts__logo {
@@ -48,7 +64,18 @@
     width: 49%;
    }
 
+   .contacts__text--button:hover {
+    letter-spacing: 0.3rem;
+    transition: all 0.5s ease-in-out;
+   }
+
    .contacts__logo {
     width: 49%;
+   }
+
+   .contacts__social > a:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
    }
 }

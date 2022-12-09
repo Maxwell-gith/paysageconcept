@@ -1,6 +1,7 @@
 #services {
     display: flex;
     flex-direction: column;
+    padding: 5px;
 }
 
 .services__title {
@@ -12,39 +13,62 @@
     padding: 25px;
     background-color: $primaryColor;
     margin-bottom: 25px;
+    border-radius: 10px;
 }
 
 .creations__title {
     color: whitesmoke;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .creations__text {
     color: whitesmoke;
     text-align: center;
+    margin-top: 25px;
 }
 
 .entretiens {
     padding: 25px;
     background-color: $primaryColor;
     margin-bottom: 25px;
+    border-radius: 10px;
+    position: relative;
 }
 
 .entretiens__title {
     color: whitesmoke;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.entretiens__badge {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 60px;
+    max-width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e63946;
+    color: whitesmoke;
+    position: absolute;
+    right: 10px;
+    top: 15px;
 }
 
 .entretiens__text {
     color: whitesmoke;
     text-align: center;
+    margin-top: 25px;
 }
 
 .swiper {
     width: 100%;
     height: auto;
+    border-radius: 10px;
   }
 
 .swiper-button-prev, .swiper-button-next {
