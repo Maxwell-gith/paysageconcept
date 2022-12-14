@@ -47,16 +47,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: 60px;
-    max-width: 150px;
-    padding: 5px;
-    border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
-    background-color: #e63946;
-    color: whitesmoke;
+    max-width: 100px;
     position: absolute;
     right: 10px;
     top: 15px;
+    z-index: 3;
 }
 
 .entretiens__text {
@@ -69,6 +64,7 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
+    position: relative;
   }
 
 .swiper-button-prev, .swiper-button-next {

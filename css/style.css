@@ -1,3 +1,27 @@
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif;
 }
@@ -130,17 +154,6 @@ a {
   text-decoration: none;
 }
 
-section {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-@media screen and (min-width: 1824px) {
-  body {
-    width: 75%;
-    margin: auto;
-  }
-}
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,7 +318,7 @@ section {
   }
 }
 .header {
-  background: url(../../img/header_photo.jpeg);
+  background: url(../../img/header_photo_cut_dark.webp);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -446,16 +459,11 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-height: 60px;
-  max-width: 150px;
-  padding: 5px;
-  border-radius: 5px;
-  font-family: "Roboto", sans-serif;
-  background-color: #e63946;
-  color: whitesmoke;
+  max-width: 100px;
   position: absolute;
   right: 10px;
   top: 15px;
+  z-index: 3;
 }
 
 .entretiens__text {
@@ -468,6 +476,7 @@ section {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  position: relative;
 }
 
 .swiper-button-prev, .swiper-button-next {
@@ -634,4 +643,21 @@ section {
   color: whitesmoke;
   text-decoration: underline;
   cursor: pointer;
+}
+
+body {
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1824px) {
+  body {
+    width: 75%;
+    margin: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
