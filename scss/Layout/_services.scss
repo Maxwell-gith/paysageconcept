@@ -1,7 +1,6 @@
 #services {
     display: flex;
     flex-direction: column;
-    padding: 5px;
 }
 
 .services__title {
@@ -9,37 +8,24 @@
     margin-bottom: 25px;
 }
 
-.creations {
-    padding: 25px;
+.services__card {
+    padding: 15px;
     background-color: $primaryColor;
-    margin-bottom: 25px;
-    border-radius: 10px;
+    margin-bottom: 55px;
+    position: relative;
+    box-shadow: 8px 8px 12px #aaa;
 }
 
-.creations__title {
+.services__card__title {
     color: whitesmoke;
     text-align: center;
     margin-bottom: 25px;
 }
 
-.creations__text {
+.services__text {
     color: whitesmoke;
     text-align: center;
     margin-top: 25px;
-}
-
-.entretiens {
-    padding: 25px;
-    background-color: $primaryColor;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    position: relative;
-}
-
-.entretiens__title {
-    color: whitesmoke;
-    text-align: center;
-    margin-bottom: 25px;
 }
 
 .entretiens__badge {
@@ -54,16 +40,9 @@
     z-index: 3;
 }
 
-.entretiens__text {
-    color: whitesmoke;
-    text-align: center;
-    margin-top: 25px;
-}
-
 .swiper {
     width: 100%;
     height: auto;
-    border-radius: 10px;
     position: relative;
   }
 
@@ -77,11 +56,7 @@
         justify-content: space-around;
     }
 
-    .creations {
-        width: 40%;
-    }
-
-    .entretiens {
+    .services__card {
         width: 40%;
     }
 }
