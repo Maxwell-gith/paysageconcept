@@ -318,7 +318,7 @@ a {
   }
 }
 .header {
-  background: url(../../img/header_photo_cut_dark.webp);
+  background: url(../../img/header_photo_cut2_dark.webp);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -415,7 +415,7 @@ a {
 }
 
 .services__card {
-  padding: 15px;
+  padding: 35px;
   background-color: rgb(46, 101, 55);
   margin-bottom: 55px;
   position: relative;
